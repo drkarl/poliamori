@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module external.system.module.type="sourceSet" type="JAVA_MODULE" version="4">
+  <component name="NewModuleRootManager">
+    <output url="file://$MODULE_DIR$/../../../bitvavo/build/classes/java/main" />
+    <exclude-output />
+    <content url="file://$MODULE_DIR$/../../../bitvavo/src/main">
+      <sourceFolder url="file://$MODULE_DIR$/../../../bitvavo/src/main/java" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/../../../bitvavo/src/main/resources" type="java-resource" />
+    </content>
+    <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="jdk" jdkName="15" jdkType="JavaSDK" />
+    <orderEntry type="module" module-name="poliamori.api.main" />
+    <orderEntry type="library" name="Gradle: com.bitvavo.api:api:1.0" level="project" />
+    <orderEntry type="library" name="Gradle: org.json:json:20180130" level="project" />
+    <orderEntry type="library" name="Gradle: commons-io:commons-io:2.6" level="project" />
+    <orderEntry type="library" name="Gradle: commons-codec:commons-codec:1.11" level="project" />
+    <orderEntry type="library" name="Gradle: org.eclipse.jetty.websocket:javax-websocket-client-impl:9.4.14.v20181114" level="project" />
+    <orderEntry type="library" name="Gradle: org.eclipse.jetty.websocket:websocket-client:9.4.14.v20181114" level="project" />
+    <orderEntry type="library" name="Gradle: javax.websocket:javax.websocket-client-api:1.0" level="project" />
+    <orderEntry type="library" name="Gradle: org.eclipse.jetty:jetty-client:9.4.14.v20181114" level="project" />
+    <orderEntry type="library" name="Gradle: org.eclipse.jetty:jetty-xml:9.4.14.v20181114" level="project" />
+    <orderEntry type="library" name="Gradle: org.eclipse.jetty.websocket:websocket-common:9.4.14.v20181114" level="project" />
+    <orderEntry type="library" name="Gradle: org.eclipse.jetty:jetty-io:9.4.14.v20181114" level="project" />
+    <orderEntry type="library" name="Gradle: org.eclipse.jetty:jetty-util:9.4.14.v20181114" level="project" />
+    <orderEntry type="library" name="Gradle: org.eclipse.jetty:jetty-http:9.4.14.v20181114" level="project" />
+    <orderEntry type="library" name="Gradle: org.eclipse.jetty.websocket:websocket-api:9.4.14.v20181114" level="project" />
+  </component>
+</module>
