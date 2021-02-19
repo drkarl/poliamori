@@ -1,3 +1,11 @@
+val spotbugsVersion: String by project
+val vavrVersion: String by project
+val lombokVersion: String by project
+val floggerVersion: String by project
+val bitvavoApiVersion: String by project
+val findSecBugsVersion: String by project
+val springBootVersion: String by project
+
 plugins {
     java
     id("com.github.spotbugs") version "4.6.0"
@@ -16,18 +24,18 @@ repositories {
 
 dependencies {
     implementation(project(":api"))
-    implementation("gradle.plugin.com.github.spotbugs.snom:spotbugs-gradle-plugin:4.6.0")
-    implementation("com.bitvavo.api:api:1.0")
-    spotbugsPlugins("com.h3xstream.findsecbugs:findsecbugs-plugin:1.10.1")
+    implementation("gradle.plugin.com.github.spotbugs.snom:spotbugs-gradle-plugin:$spotbugsVersion")
+    implementation("com.bitvavo.api:api:$bitvavoApiVersion")
+    spotbugsPlugins("com.h3xstream.findsecbugs:findsecbugs-plugin:$findSecBugsVersion")
 
-    implementation("io.vavr:vavr:1.0.0-alpha-3")
-    compileOnly("org.projectlombok:lombok:1.18.18")
-    annotationProcessor("org.projectlombok:lombok:1.18.18")
-    implementation("com.google.flogger:flogger-system-backend:0.5.1")
-    implementation("org.springframework.boot:spring-boot-starter:2.4.2")
-    compileOnly("org.springframework.boot:spring-boot-devtools:2.4.2")
+    implementation("io.vavr:vavr:$vavrVersion")
+    compileOnly("org.projectlombok:lombok:$lombokVersion")
+    annotationProcessor("org.projectlombok:lombok:$lombokVersion")
+    implementation("com.google.flogger:flogger-system-backend:$floggerVersion")
+    implementation("org.springframework.boot:spring-boot-starter:$springBootVersion")
+    compileOnly("org.springframework.boot:spring-boot-devtools::$springBootVersion")
 
-    testImplementation("org.springframework.boot:spring-boot-starter-test:2.4.2")
-    testCompileOnly("org.projectlombok:lombok:1.18.18")
-    testAnnotationProcessor("org.projectlombok:lombok:1.18.18")
+    testImplementation("org.springframework.boot:spring-boot-starter-test:$springBootVersion")
+    testCompileOnly("org.projectlombok:lombok:$lombokVersion")
+    testAnnotationProcessor("org.projectlombok:lombok:$lombokVersion")
 }
