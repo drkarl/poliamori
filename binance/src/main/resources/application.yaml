@@ -1,5 +1,6 @@
 crypto:
   provider:
     api:
-      api-key: ""
-      api-secret: ""
+      binance:
+        api-key: ${BINANCE_API_KEY}
+        api-secret: ${BINANCE_API_SECRET}

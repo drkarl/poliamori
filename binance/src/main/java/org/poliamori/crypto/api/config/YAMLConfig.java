@@ -10,10 +10,10 @@ import org.springframework.context.annotation.Configuration;
 @Data
 public class YAMLConfig {
 
-    @Value("${crypto.provider.api.api-key}")
+    @Value("${crypto.provider.api.binance.api-key}")
     private String apiKey;
 
-    @Value("${crypto.provider.api.api-secret}")
+    @Value("${crypto.provider.api.binance.api-secret}")
     private String apiSecret;
 
 }
